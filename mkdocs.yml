@@ -7,10 +7,6 @@ theme: pulse
 nav:
     - Home: index.md
     - About: about.md
-    - CS149 Fall 2024: cs149fall2024/index.md
-    - CS159 Fall 2024: cs159fall2024/index.md
-    - 149 Syllabus: cs149fall2024/syllabus
-    - 159 Syllabus: cs159fall2024/syllabus
     - Canvas: https://canvas.jmu.edu/
     - Gradescope: https://www.gradescope.com/
     - Resources: resources.md

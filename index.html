@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +10,13 @@
         <link rel="shortcut icon" href="img/favicon.ico">
         <title>CHAOAJ - Alvin Chao</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/mono-blue.min.css">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/mono-blue.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
@@ -22,7 +26,7 @@
             <div class="container">
                 <a class="navbar-brand" href=".">CHAOAJ - Alvin Chao</a>
                 <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -30,38 +34,26 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Home</a>
+                            <li class="nav-item">
+                                <a href="." class="nav-link active" aria-current="page">Home</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="about/" class="nav-link">About</a>
                             </li>
-                            <li class="navitem">
-                                <a href="cs149fall2024/" class="nav-link">CS149 Fall 2024</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="cs159fall2024/" class="nav-link">CS159 Fall 2024</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="cs149fall2024/syllabus" class="nav-link">149 Syllabus</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="cs159fall2024/syllabus" class="nav-link">159 Syllabus</a>
-                            </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="https://canvas.jmu.edu/" class="nav-link">Canvas</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="https://www.gradescope.com/" class="nav-link">Gradescope</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="resources/" class="nav-link">Resources</a>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <ul class="nav navbar-nav ms-md-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -82,24 +74,28 @@
 
         <div class="container">
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
         </button>
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#alvin-chao" class="nav-link">Alvin Chao</a>
+            <li class="nav-item" data-bs-level="1"><a href="#alvin-chao" class="nav-link">Alvin Chao</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#courses" class="nav-link">Courses:</a>
+            <li class="nav-item" data-bs-level="2"><a href="#courses" class="nav-link">Courses:</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#contact" class="nav-link">Contact</a>
+            <li class="nav-item" data-bs-level="2"><a href="#repositories" class="nav-link">Repositories:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#contact" class="nav-link">Contact</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -129,115 +125,17 @@
 
 <hr />
 <h2 id="courses">Courses:</h2>
-<p>Current:<br/></p>
-<hr />
-<table>
-<thead>
-<tr>
-<th>CS 149</th>
-<th>CS 159</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="#">Fall 2024</a></td>
-<td><a href="#">Fall 2024</a></td>
-</tr>
-<tr>
-<td>-----------------------------------------------------------------------------------------------------------</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>Past Courses:</p>
-
-<hr />
-<table>
-<thead>
-<tr>
-<th>CS 149</th>
-<th>CS 159</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td><a href="cs149spring2024/index.html">CS149 Spring 2024</a></td>
-<td>.</td>
-</tr>
-<tr>
-<td><a href="cs149spring2023/index.shtml">CS149 Spring 2023</a></td>
-<td>.</td>
-</tr>
-<tr>
-<td><a href="cs149fall2022/index.shtml">CS 149 Fall 2022</a></td>
-<td>.</td>
-</tr>
-<tr>
-<td><a href="cs149spring2022/index.shtml">CS149 Spring 2022</a></td>
-<td>.</td>
-</tr>
-<tr>
-<td><a href="cs149fall2021/index.shtml">CS149 Fall 2021</a></td>
-<td>.</td>
-</tr>
-<tr>
-<td><a href="cs149spring2021/index.shtml">CS149 Spring 2021</a></td>
-<td>.</td>
-</tr>
-<tr>
-<td><a href="cs149fall2020/index.shtml">CS149 Fall 2020</a></td>
-<td>.</td>
-</tr>
-<tr>
-<td><a href="cs149spring2020/index.shtml">CS149 Spring 2020</a></td>
-<td>.</td>
-</tr>
-<tr>
-<td><a href="cs149fall2019/index.shtml">CS149 Fall 2019</a></td>
-<td>.</td>
-</tr>
-<tr>
-<td><a href="cs149spring2019/index.shtml">CS149 Spring 2019</a></td>
-<td>.</td>
-</tr>
-<tr>
-<td><a href="cs149fall2018/index.shtml" title="CS149 Fall 2018">CS149 Fall 2018</a></td>
-<td>.</td>
-</tr>
-<tr>
-<td><a href="cs149spring2018/index.shtml" title="CS 149 Spring 2018">CS149 Spring 2018</a></td>
-<td>.</td>
-</tr>
-<tr>
-<td><a href="cs149fall2017/index.shtml" title="CS 149 Fall 2017">CS149 Fall 2017</a></td>
-<td>.</td>
-</tr>
-<tr>
-<td><a href="cs149spring2017/index.shtml" title="CS 149 Spring 2017">CS149 Spring 2017</a></td>
-<td>.</td>
-</tr>
-<tr>
-<td><a href="cs149fall2016/index.shtml" title="CS 149 Fall 2016">CS149 Fall 2016</a></td>
-<td>.</td>
-</tr>
-<tr>
-<td><a href="cs139spring2016.shtml" title="CS139 Spring 2016">CS139 Spring 2016</a></td>
-<td>.</td>
-</tr>
-<tr>
-<td><a href="Zcs240fall2015/index.shtml" title="CS 240 Fall 2015">CS240 Fall 2015</a></td>
-<td>.</td>
-</tr>
-<tr>
-<td>---------------------------------------------------------------------------------------------------</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="https://the-chaos.com/alvin/">Courses I've taught</a></p>
+<h2 id="repositories">Repositories:</h2>
+<h3 id="games">Games:</h3>
+<p><a href="https://chaoaj.github.io/cal-puzzle/">Cal-Puzzle</a></p>
+<p><a href="https://chaoaj.github.io/daily-calendar/">Daily Calendar</a></p>
+<p><a href="https://chaoaj.github.io/15puzzle/">15 puzzle</a></p>
+<p><a href="https://chaoaj.github.io/qless-game/">Qless game</a></p>
+<p><a href="https://chaoaj.github.io/tangram-puzzle">Tangram puzzle</a></p>
+<h3 id="apps">Apps:</h3>
+<p><a href="https://chaoaj.github.io/cs-calc/">CS Calc</a></p>
+<p><a href="https://frozen-treats.lovable.app">Harrisonburg Frozen Treat Tracker(Alpha)</a></p>
 <h2 id="contact">Contact</h2>
 <div class="yui3-u-3-4 yui3u34">
 <div style="text-align: left;">Contact chaoaj[at]jmu.edu for more information about this page or Twitter: <a href="https://twitter.com/chaoaj" title="Chaoaj Twitter">@chaoaj</a><br>
@@ -261,8 +159,7 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
         <script>
             var base_url = ".",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
@@ -275,7 +172,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p>From here you can search these documents. Enter your search terms below.</p>
@@ -295,7 +192,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <table class="table">
@@ -335,6 +232,6 @@
 </html>
 
 <!--
-MkDocs version : 1.5.3
-Build Date UTC : 2024-05-30 18:54:46.358502+00:00
+MkDocs version : 1.6.1
+Build Date UTC : 2026-04-25 19:40:39.979757+00:00
 -->
