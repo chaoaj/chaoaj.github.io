@@ -30,13 +30,18 @@
 
 [15 puzzle](https://chaoaj.github.io/15puzzle/)
 
+[Food Chain Island](https://chaoaj.github.io/food-chain-island/)
+
 [Qless game](https://chaoaj.github.io/qless-game/)
 
 [Tangram puzzle](https://chaoaj.github.io/tangram-puzzle)
 
 
+
 ### Apps:
 [CS Calc](https://chaoaj.github.io/cs-calc/)
+
+[QR Code Generator](https://www.the-chaos.com/cgi-bin/qrcode-gen.py)
 
 [Harrisonburg Frozen Treat Tracker(Alpha)](https://frozen-treats.lovable.app)
 
