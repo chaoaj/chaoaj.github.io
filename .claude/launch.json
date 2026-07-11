@@ -6,6 +6,12 @@
       "runtimeExecutable": "bash",
       "runtimeArgs": ["-c", "source .venv/bin/activate && zensical serve -a 127.0.0.1:8765"],
       "port": 8765
+    },
+    {
+      "name": "root-static-serve",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8766"],
+      "port": 8766
     }
   ]
 }
