@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "zensical-serve",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "source .venv/bin/activate && zensical serve -a 127.0.0.1:8765"],
+      "port": 8765
+    }
+  ]
+}

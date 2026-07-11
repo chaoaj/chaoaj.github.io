@@ -1,0 +1,336 @@
+/* Legacy course-content helper classes (input/output, code, thonny shell, etc.).
+   NOTE: this file is loaded as a stylesheet via <link>, so it must be valid CSS.
+   The old <style>...</style> / <!-- --> HTML wrappers were invalid here and
+   silently broke the first rule after each one (including the :root palette
+   block), so they have been removed. */
+.input {
+    color: firebrick;
+}
+.output {
+    color: green;
+}
+.code {
+    white-space: pre;
+}
+
+.coding {
+    color: darkorange;
+}
+.red {
+    color: red;
+}
+.green {
+    color: green;
+}
+
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+}
+
+table {
+    border-collapse: collapse; /* Ensure borders are clean */
+    width: 100%; /* Optional: Make the table span the full width */
+}
+
+table th, table td {
+    padding: 8px; /* Add padding for better readability */
+    text-align: left; /* Align text to the left */
+    border: 1px solid #ddd; /* Add borders for clarity */
+}
+
+
+tr.even {
+    background: #CCC!important;
+}
+
+em {
+    color: #b5005b; /* was: deeppink (#ff1493, 3.63:1 contrast — fails WCAG AA); #b5005b = 5.07:1 */
+}
+pre {
+    display: block;
+font-family: monospace;
+white-space: pre;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    background-color: #efefff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    border: #aaaaaa solid 1px;
+}
+
+.thonny_shell {
+    background-color:#F7F7F0;
+    white-space: pre;
+    font-family: monospace;
+    margin: 0;
+}
+
+.thonny_in {
+	color:#1806FF
+}
+
+.thonny_error {
+	color:#CC0000
+}
+
+.thonny_prompt {
+	color:#800080
+}
+.thonny_command {
+	color:#A9A9A9
+}
+#back-top {
+  bottom: 130px;
+  left: 5%; /* instead of margin-left - johns2ja */
+  position: fixed;
+}
+#back-top a {
+  color: #bbb !important;
+  display: block;
+  font-size: 11px;
+  height: 75px;
+  text-align: center;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition: all 1s ease 0s;
+  width: 75px;
+}
+#back-top span {
+  background: #ddd url("//www.jmu.edu/jmucmsfiles/images/up-arrow.png") no-repeat scroll center center;
+  border-radius: 15px;
+  display: block;
+  height: 75px;
+  margin-bottom: 7px;
+  transition: all 1s ease 0s;
+  width: 75px;
+}
+@media all and (max-width:768px){ /* RWD by johns2ja */
+        #back-top {
+                bottom: 3%;
+                left: 1%;
+        }
+        #back-top a {
+                height: 32px;
+                width: 32px;
+                font-size: 0px;
+        }
+        #back-top span {
+                width: 32px;
+                height: 32px;
+                background-size: 32px;
+        }
+}
+
+/* --- Site header and navigation overrides to match legacy look --- */
+
+/* =========================================================================
+   JMU purple palette
+   -------------------------------------------------------------------------
+   Material generates its `purple` preset into [data-md-color-primary=purple]
+   and [data-md-color-accent=purple] blocks (palette.css). We override those
+   *same* selectors here. Because extra.css is the last stylesheet loaded, an
+   equal-specificity rule wins on cascade order — so JMU purple is applied at
+   the stylesheet level with no !important and no post-build sed patching of
+   the generated CSS. Change the brand color in one place: here.
+   ========================================================================= */
+:root {
+    --md-jmu-purple: #450084;          /* brand: JMU dark purple */
+    --md-jmu-purple--light: #5f3aa5;
+    --md-jmu-purple--dark: #2f0066;
+    --md-jmu-purple--transparent: #4500841a;
+
+    --md-hue: 271deg;
+    --md-code-hl-function-color: var(--md-jmu-purple);
+    /* alternate palette helpers */
+    --md-alt-dark-green: #5F791C;
+    --md-alt-dark-blue: #3C738B;
+    --md-highlight-medium-purple: var(--md-jmu-purple);
+    --md-highlight-slate-gray: #333333;
+    --md-highlight-dark-gray: #595959;
+    --md-highlight-dark-gold: #AD9C65;
+    --md-highlight-light-purple: #DACCE6;
+    --md-highlight-medium-gray: #b2b2b2;
+}
+
+[data-md-color-primary=purple] {
+    --md-primary-fg-color: var(--md-jmu-purple);
+    --md-primary-fg-color--light: var(--md-jmu-purple--light);
+    --md-primary-fg-color--dark: var(--md-jmu-purple--dark);
+    --md-primary-bg-color: #fff;
+    --md-primary-bg-color--light: #ffffffb3;
+    --md-typeset-a-color: var(--md-jmu-purple);
+}
+
+[data-md-color-accent=purple] {
+    --md-accent-fg-color: var(--md-jmu-purple);
+    --md-accent-fg-color--transparent: var(--md-jmu-purple--transparent);
+    --md-accent-bg-color: #fff;
+    --md-accent-bg-color--light: #ffffffb3;
+}
+
+/* Thin purple stripe at the very top */
+.top-stripe {
+    height: 6px;
+    background: var(--md-primary-fg-color);
+    width: 100%;
+}
+
+.site-header {
+    background: #f8f8f8;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+.site-title a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    text-decoration: none;
+}
+.top-nav a {
+    margin-left: 18px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+.top-nav a:hover {
+    color: var(--md-primary-fg-color);
+}
+
+/* Sidebar tweaks (Material selectors are targeted when available) */
+.md-sidebar, .wy-nav-side {
+    background: #fafafa;
+    border-right: 1px solid #eaeaea;
+}
+.md-sidebar .md-nav__link, .wy-nav-side a {
+    padding: 6px 12px;
+    color: #333;
+}
+.md-sidebar .md-nav__link--active, .wy-nav-side .current {
+    background: var(--md-primary-fg-color--light); /* light purple-ish */
+    color: var(--md-primary-fg-color);
+    font-weight: bold;
+}
+
+/* Ensure main content sits below header */
+.site-main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 16px;
+}
+
+@media (max-width: 800px) {
+    .header-inner {flex-direction: column; align-items: flex-start;}
+    .top-nav {margin-top: 8px;}
+}
+
+/* Header uses the primary palette var (now JMU purple); override the theme's
+   gradient background-image so the brand color shows solid. */
+.md-header {
+    background-color: var(--md-primary-fg-color);
+    background-image: none !important;
+    color: #ffffff !important;
+}
+.md-header .md-header__inner,
+.md-header__title,
+.md-header__button,
+.md-header a,
+.md-header label {
+    color: #ffffff !important;
+}
+.md-header svg path {
+    fill: #ffffff !important;
+}
+
+/* Ensure top stripe remains solid JMU purple */
+.top-stripe {
+    background-color: var(--md-jmu-purple);
+}
+
+/* Force anchor text-decoration-color to the typeset color */
+a, .md-typeset a, .md-typeset a:link, .md-typeset a:visited {
+    text-decoration-color: var(--md-typeset-a-color) !important;
+}
+
+/* Scrollbar thumb override (WebKit/Blink) */
+*::-webkit-scrollbar-thumb {
+    background-color: var(--md-accent-fg-color) !important;
+    border-radius: 6px;
+}
+
+/* Generic scrollbar-color override (Firefox) */
+* {
+    scrollbar-color: var(--md-accent-fg-color) transparent !important;
+}
+
+/* Accessibility fixes: ensure active nav items on dark purple backgrounds are readable */
+/* Make active nav text light grey when highlighted with JMU dark purple (#450084) */
+body[data-md-color-primary="purple"] .md-sidebar .md-nav__link--active,
+body[data-md-color-primary="purple"] .md-sidebar .md-nav__link--active,
+[data-md-color-primary="purple"] .md-sidebar .md-nav__link--active,
+body[data-md-color-accent="purple"] .md-sidebar .md-nav__link--active,
+[data-md-color-accent="purple"] .md-sidebar .md-nav__link--active,
+body[data-md-color-primary="purple"] .md-nav__link--active,
+[data-md-color-primary="purple"] .md-nav__link--active,
+body[data-md-color-accent="purple"] .md-nav__link--active,
+[data-md-color-accent="purple"] .md-nav__link--active{
+    /* Force JMU purple for active nav items instead of theme default */
+    background: var(--md-jmu-purple) !important;
+    color: #e6e6e6 !important; /* light grey for readability */
+}
+.md-nav__item .md-nav__link--active svg path{
+    color: inherit !important;
+    fill: currentColor !important;
+    stroke: currentColor !important;
+    opacity: 1 !important;
+}
+
+/* Strong focus indicator for keyboard users */
+.md-nav__link:focus, .md-nav__link.focus-visible, .md-nav__link:focus-visible{
+    outline: 3px solid rgba(181,153,206,0.95); /* semi-opaque medium purple */
+    outline-offset: 2px;
+}
+
+/* Ensure header controls have sufficient contrast */
+.md-header__button, .md-header__title, .md-header a, .md-header label{
+    color: #ffffff !important;
+}
+
+/* Improve footer highlight contrast */
+.md-footer .md-copyright__highlight{
+    color: #ffffff !important;
+    background-color: var(--md-jmu-purple) !important;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+}
+
+/* Reduce very-low-contrast muted text to accessible mid-gray */
+.md-typeset small, .md-typeset .muted{ color: #6b6b6b !important; }
+
+/* Make links visually distinguishable (underline) so they don't rely on color alone */
+.md-typeset a, .md-typeset a:link, .md-typeset a:visited {
+    text-decoration: underline !important;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+}
+
+/* Ensure footer text has sufficient contrast against dark backgrounds */
+.md-footer, .md-footer .md-footer-meta, .md-footer .md-copyright {
+    color: #e6e6e6 !important;
+}

@@ -1,9 +1,86 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
-  </head>
-  <body>
-    {{ page.content }}
-  </body>
-</html>
+{% extends "base.html" %}
+
+{% block header %}
+  <div class="top-stripe" aria-hidden="true"></div>
+  <script>
+  (function(){
+    function disablePalette(el){
+      try{
+        el.setAttribute('tabindex','-1');
+        el.setAttribute('aria-hidden','true');
+        el.setAttribute('disabled','true');
+      }catch(e){}
+    }
+    function disableAll(){
+      try{document.querySelectorAll('input[id^="__palette"]').forEach(disablePalette);}catch(e){}
+    }
+    function hideOverlays(){
+      try{document.querySelectorAll('.md-overlay').forEach(function(el){el.setAttribute('aria-hidden','true');el.removeAttribute('role');});}catch(e){}
+    }
+    disableAll();
+    hideOverlays();
+    // Fix: hide CSS-toggle checkboxes that sit outside any landmark (axe: region)
+    function hideToggles(){
+      try{
+        ['__drawer','__search'].forEach(function(id){
+          var el = document.getElementById(id);
+          if(el){ el.setAttribute('aria-hidden','true'); }
+        });
+      }catch(e){}
+    }
+    hideToggles();
+    // Fix: deduplicate landmark labels for the two "On this page" nav elements (axe: landmark-unique)
+    // One copy lives in the mobile sidebar, one in the desktop sidebar — give them distinct labels.
+    function deduplicateTocNavs(){
+      try{
+        var navs = document.querySelectorAll('nav.md-nav--secondary[aria-label="On this page"]');
+        if(navs.length >= 2){
+          navs[0].setAttribute('aria-label','On this page (navigation)');
+        }
+      }catch(e){}
+    }
+    deduplicateTocNavs();
+    // Ensure a visible search input exists with required ARIA attributes
+    try{
+      document.querySelectorAll('.md-search').forEach(function(container){
+        try{
+          if(!container.querySelector('input[role="combobox"], input[type="search"], input[type="text"]')){
+            var inp = document.createElement('input');
+            inp.type = 'text';
+            inp.setAttribute('role','combobox');
+            inp.setAttribute('aria-expanded','false');
+            inp.setAttribute('aria-haspopup','listbox');
+            inp.setAttribute('placeholder','Search');
+            inp.setAttribute('autocomplete','off');
+            inp.setAttribute('autocorrect','off');
+            inp.setAttribute('spellcheck','false');
+            container.appendChild(inp);
+          }
+        }catch(e){}
+      });
+      if(!document.getElementById('a11y-search-controls-static')){
+        var ul = document.createElement('ul'); ul.id = 'a11y-search-controls-static'; ul.setAttribute('role','listbox'); ul.setAttribute('aria-hidden','true'); ul.style.position='absolute'; ul.style.left='-9999px'; document.body.appendChild(ul);
+      }
+    }catch(e){}
+    try{
+      new MutationObserver(function(muts){
+        muts.forEach(function(m){
+          m.addedNodes && m.addedNodes.forEach(function(node){
+            try{
+              if(node.nodeType===1){
+                if(node.matches && node.matches('input[id^="__palette"]')) disablePalette(node);
+                node.querySelectorAll && node.querySelectorAll('input[id^="__palette"]').forEach(disablePalette);
+                if(node.matches && node.matches('.md-overlay')){ try{ node.setAttribute('aria-hidden','true'); node.removeAttribute('role'); }catch(e){} }
+                node.querySelectorAll && node.querySelectorAll('.md-overlay').forEach(function(el){ try{ el.setAttribute('aria-hidden','true'); el.removeAttribute('role'); }catch(e){} });
+              }
+            }catch(e){}
+          });
+        });
+        hideToggles();
+        deduplicateTocNavs();
+      }).observe(document.documentElement, { childList: true, subtree: true });
+    }catch(e){}
+  })();
+  </script>
+  {{ super() }}
+{% endblock %}

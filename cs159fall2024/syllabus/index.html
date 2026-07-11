@@ -1,151 +1,655 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Alvin Chao">
+      
+      
         <link rel="canonical" href="https://chaoaj.github.io/cs159fall2024/syllabus/">
-        <link rel="shortcut icon" href="../../img/favicon.ico">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="zensical-0.0.50">
+    
+    
+      
         <title>Syllabus for CS159 Fall 2024 - Instructor: Chao - CHAOAJ - Alvin Chao</title>
-        <link href="../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/mono-blue.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script> 
-    </head>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/classic/main.f62f0af6.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/classic/palette.7dc9a0ad.min.css">
+      
+      
 
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="../..">CHAOAJ - Alvin Chao</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../.." class="nav-link">Home</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../../about/" class="nav-link">About</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../../cs149fall2024/" class="nav-link">CS149 Fall 2024</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../" class="nav-link">CS159 Fall 2024</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../../cs149fall2024/syllabus" class="nav-link">149 Syllabus</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="." class="nav-link">159 Syllabus</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="https://canvas.jmu.edu/" class="nav-link">Canvas</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="https://www.gradescope.com/" class="nav-link">Gradescope</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../../resources/" class="nav-link">Resources</a>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#syllabus-for-cs159-fall-2024-instructor-chao" class="nav-link">Syllabus for CS159 Fall 2024 - Instructor: Chao</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#objectives-and-expectations" class="nav-link">Objectives and Expectations</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#course-textbook" class="nav-link">Course Textbook</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#grading-criteria" class="nav-link">Grading Criteria</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#instructor-contact-info" class="nav-link">Instructor Contact Info</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#course-policies" class="nav-link">Course Policies</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#attendance-and-participation" class="nav-link">Attendance and Participation</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#homework" class="nav-link">Homework</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#programming-assignmentspas" class="nav-link">Programming Assignments(PA's)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#academic-honesty" class="nav-link">Academic Honesty</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#disability-accommodations" class="nav-link">Disability Accommodations</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#excused-absences" class="nav-link">Excused Absences</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#inclement-weather" class="nav-link">Inclement Weather</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#catalog-description" class="nav-link">Catalog Description</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
 
-<h1 id="syllabus-for-cs159-fall-2024-instructor-chao">Syllabus for CS159 Fall 2024 - Instructor: Chao</h1>
-<h2 id="objectives-and-expectations">Objectives and Expectations</h2>
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#syllabus-for-cs159-fall-2024-instructor-chao" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+  <div class="top-stripe" aria-hidden="true"></div>
+  <script>
+  (function(){
+    function disablePalette(el){
+      try{
+        el.setAttribute('tabindex','-1');
+        el.setAttribute('aria-hidden','true');
+        el.setAttribute('disabled','true');
+      }catch(e){}
+    }
+    function disableAll(){
+      try{document.querySelectorAll('input[id^="__palette"]').forEach(disablePalette);}catch(e){}
+    }
+    function hideOverlays(){
+      try{document.querySelectorAll('.md-overlay').forEach(function(el){el.setAttribute('aria-hidden','true');el.removeAttribute('role');});}catch(e){}
+    }
+    disableAll();
+    hideOverlays();
+    // Fix: hide CSS-toggle checkboxes that sit outside any landmark (axe: region)
+    function hideToggles(){
+      try{
+        ['__drawer','__search'].forEach(function(id){
+          var el = document.getElementById(id);
+          if(el){ el.setAttribute('aria-hidden','true'); }
+        });
+      }catch(e){}
+    }
+    hideToggles();
+    // Fix: deduplicate landmark labels for the two "On this page" nav elements (axe: landmark-unique)
+    // One copy lives in the mobile sidebar, one in the desktop sidebar — give them distinct labels.
+    function deduplicateTocNavs(){
+      try{
+        var navs = document.querySelectorAll('nav.md-nav--secondary[aria-label="On this page"]');
+        if(navs.length >= 2){
+          navs[0].setAttribute('aria-label','On this page (navigation)');
+        }
+      }catch(e){}
+    }
+    deduplicateTocNavs();
+    // Ensure a visible search input exists with required ARIA attributes
+    try{
+      document.querySelectorAll('.md-search').forEach(function(container){
+        try{
+          if(!container.querySelector('input[role="combobox"], input[type="search"], input[type="text"]')){
+            var inp = document.createElement('input');
+            inp.type = 'text';
+            inp.setAttribute('role','combobox');
+            inp.setAttribute('aria-expanded','false');
+            inp.setAttribute('aria-haspopup','listbox');
+            inp.setAttribute('placeholder','Search');
+            inp.setAttribute('autocomplete','off');
+            inp.setAttribute('autocorrect','off');
+            inp.setAttribute('spellcheck','false');
+            container.appendChild(inp);
+          }
+        }catch(e){}
+      });
+      if(!document.getElementById('a11y-search-controls-static')){
+        var ul = document.createElement('ul'); ul.id = 'a11y-search-controls-static'; ul.setAttribute('role','listbox'); ul.setAttribute('aria-hidden','true'); ul.style.position='absolute'; ul.style.left='-9999px'; document.body.appendChild(ul);
+      }
+    }catch(e){}
+    try{
+      new MutationObserver(function(muts){
+        muts.forEach(function(m){
+          m.addedNodes && m.addedNodes.forEach(function(node){
+            try{
+              if(node.nodeType===1){
+                if(node.matches && node.matches('input[id^="__palette"]')) disablePalette(node);
+                node.querySelectorAll && node.querySelectorAll('input[id^="__palette"]').forEach(disablePalette);
+                if(node.matches && node.matches('.md-overlay')){ try{ node.setAttribute('aria-hidden','true'); node.removeAttribute('role'); }catch(e){} }
+                node.querySelectorAll && node.querySelectorAll('.md-overlay').forEach(function(el){ try{ el.setAttribute('aria-hidden','true'); el.removeAttribute('role'); }catch(e){} });
+              }
+            }catch(e){}
+          });
+        });
+        hideToggles();
+        deduplicateTocNavs();
+      }).observe(document.documentElement, { childList: true, subtree: true });
+    }catch(e){}
+  })();
+  </script>
+  
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="CHAOAJ - Alvin Chao" class="md-header__button md-logo" aria-label="CHAOAJ - Alvin Chao" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CHAOAJ - Alvin Chao
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Syllabus for CS159 Fall 2024 - Instructor: Chao
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="purple"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="CHAOAJ - Alvin Chao" class="md-nav__button md-logo" aria-label="CHAOAJ - Alvin Chao" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CHAOAJ - Alvin Chao
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Home
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.the-chaos.com/alvin/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  About
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://canvas.jmu.edu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Canvas
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.gradescope.com/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Gradescope
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.the-chaos.com/alvin/resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Resources
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objectives-and-expectations" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Objectives and Expectations
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#course-textbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Course Textbook
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Course Textbook">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zybook" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Zybook:
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grading-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Grading Criteria
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instructor-contact-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Instructor Contact Info
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#course-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Course Policies
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attendance-and-participation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Attendance and Participation
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#homework" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Homework
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programming-assignmentspas" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Programming Assignments(PA's)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#academic-honesty" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Academic Honesty
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Academic Honesty">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#honor-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Honor Code
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generative-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Generative AI
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Attribution
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disability-accommodations" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Disability Accommodations
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#excused-absences" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Excused Absences
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inclement-weather" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Inclement Weather
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#catalog-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Catalog Description
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="syllabus-for-cs159-fall-2024-instructor-chao">Syllabus for CS159 Fall 2024 - Instructor: Chao<a class="headerlink" href="#syllabus-for-cs159-fall-2024-instructor-chao" title="Permanent link">&para;</a></h1>
+<h2 id="objectives-and-expectations">Objectives and Expectations<a class="headerlink" href="#objectives-and-expectations" title="Permanent link">&para;</a></h2>
 <p>Official course description:&#160;Fundamental problem-solving techniques using a modern programming language.&#160;</p>
 <p>By the end of this course, you should be able to:</p>
 <p>*Explain fundamental programming concepts (e.g, variables, methods, decisions, loops, arrays, objects) using appropriate terminology.</p>
@@ -157,11 +661,11 @@
 <li>Evaluate your own work for compliance with requirements and style guidelines.</li>
 <li>Develop correct and efficient algorithms to solve problems using computation.&#160;</li>
 </ul>
-<h2 id="course-textbook">Course Textbook</h2>
+<h2 id="course-textbook">Course Textbook<a class="headerlink" href="#course-textbook" title="Permanent link">&para;</a></h2>
 <p><strong>Required Textbook</strong></p>
-<h3 id="zybook">Zybook:</h3>
+<h3 id="zybook">Zybook:<a class="headerlink" href="#zybook" title="Permanent link">&para;</a></h3>
 <p>Purchase the text through the Buy Book assignment in Canvas.</p>
-<h2 id="grading-criteria">Grading Criteria</h2>
+<h2 id="grading-criteria">Grading Criteria<a class="headerlink" href="#grading-criteria" title="Permanent link">&para;</a></h2>
 <p>You are responsible for all material discussed in lecture and discussion section and posted on the class web page, including announcements, deadlines, policies, etc.&#160;</p>
 <p>Your final course grade will be determined according to the following percentages:&#160;</p>
 <table>
@@ -204,22 +708,22 @@ The final exam will be two hours: one for written problems, one for coding probl
 
 <p>If you believe I have made an error while grading your work or calculating your final score, please bring it to my attention after class or during office hours. If I determine that there has been a simple mistake, I will fix it immediately and no formal request is necessary.&#160;</p>
 <p>If you believe an exam question or assignment has been graded unfairly, you must submit a verbal or written formal request for a regrade. Such requests must be submitted within one week of when the assignment in question is returned to you.&#160;<strong><em>Any coursework submitted for reconsideration may be regraded in its entirety, which could result in a lower score if warranted.</em></strong></p>
-<h2 id="instructor-contact-info">Instructor Contact Info</h2>
+<h2 id="instructor-contact-info">Instructor Contact Info<a class="headerlink" href="#instructor-contact-info" title="Permanent link">&para;</a></h2>
 <p>Please post generic questions to Piazza, where other students may answer and/or benefit from my answers. My email is chaoaj&#160;at the standard domain. My office is in ISAT 264, and my office hours are posted on the&#160;<a href="/cs149spring2023/index" title="CS 149">main course page</a>.&#160;</p>
 <p>I am also sometimes available outside office hours by appointment; if you wish to make an appointment, send me an email.&#160;</p>
-<h2 id="course-policies">Course Policies</h2>
+<h2 id="course-policies">Course Policies<a class="headerlink" href="#course-policies" title="Permanent link">&para;</a></h2>
 <p>Important announcements will be made in class and/or on the class website. Please make it a habit to check the web page daily.&#160;</p>
 <p>Although every effort has been made to be complete and accurate, unforeseen circumstances arising during the semester could require the adjustment of any material given here. Consequently, given due notice to students, I reserve the right to change any information on this syllabus or in other course materials.</p>
 <p>You are permitted to use course materials for your own personal use only. Course materials may not be distributed publicly or provided to others (excepting other students in the course), in any way or format unless explicitly allowed.&#160;</p>
-<h2 id="attendance-and-participation">Attendance and Participation</h2>
+<h2 id="attendance-and-participation">Attendance and Participation<a class="headerlink" href="#attendance-and-participation" title="Permanent link">&para;</a></h2>
 <p>Attendance is not mandatory, but participation will be used as a part of your lab/quiz grade portion. &#160;I strongly encourage you to attend every class session and participate fully in order to derive the maximum benefit of this course. If you believe that there is something I could change about the way I am handling the course in order to improve its effectiveness for you, please let me know via email or office hours.&#160;</p>
 <p>Please silence your cell phone while class is in session. If you have a laptop or tablet, you are encouraged to bring it to class and use it to work along with programming examples and exercises. Mute the volume to avoid unintended interruptions, and do not use any electronic devices for activities that may distract other students. Repeated violations of this policy may result in disciplinary action or a grade penalty in the course.&#160;</p>
 <p>I strongly encourage you to check the main website and the Piazza web forum regularly for important announcements (usually regarding programming projects). You may also use the Piazza forum to ask general questions of interest to the class as a whole (e.g., administrative issues or project clarification questions) as well as to offer each other general advice on class assignments. However, do not post any information that would violate the university academic integrity policy. If you are unsure about this, please email me for approval before you post.&#160;</p>
-<h2 id="homework">Homework</h2>
+<h2 id="homework">Homework<a class="headerlink" href="#homework" title="Permanent link">&para;</a></h2>
 <p>Written and/or programming exercises will be assigned each week. These exercises are meant to give you a chance to practice the skills you need to develop in this course. You are welcome to discuss these assignments with your classmates and to use generative AI tools to help develop and understand solutions.</p>
 <p>Be careful! Being able to understand a friend's code, or code generated using an AI tool, is very different from being able to write code on your own. If you become over-reliant on outside assistance you won't develop the skills you need to succeed on quizzes and exams.</p>
 <p>Late Homework Policy Deadlines exist, in part, so that we can discuss solutions in class. Under normal circumstances, late work will not be accepted. Contact me if you are facing unavoidable circumstances that will prevent you from submitting an assignment on time. I will do my best to work with you to make appropriate accommodations. Please don't wait until the night before to get started!</p>
-<h2 id="programming-assignmentspas">Programming Assignments(PA's)</h2>
+<h2 id="programming-assignmentspas">Programming Assignments(PA's)<a class="headerlink" href="#programming-assignmentspas" title="Permanent link">&para;</a></h2>
 <p>PA's must be submitted electronically following the instructions given in class and on the website. Assignments may not be submitted by any other means (e.g., do not email your projects to me unless I request that). It is your responsibility to test your program and verify that it works properly before submitting it.</p>
 <p>All assignments are due at 23:00 (11:00pm) on the day indicated on the assignment unless noted otherwise.  Late assignments will not be accepted.</p>
 <p>Regardless of the any other late policy, I reserve the right to refuse to grade any programs submitted after the beginning of the second class period following the project deadline, because I may discuss the solution in class.&#160;</p>
@@ -227,13 +731,13 @@ The final exam will be two hours: one for written problems, one for coding probl
 <p>You will be responsible for developing your own techniques for testing your projects before submitting it.&#160;<em><strong>I will grade your assignment based on test cases not provided to you in advance.</strong></em>&#160;Because grading may be done automatically, you must follow the project specification exactly.&#160;</p>
 <p><em><strong>Your code will be graded on a combination of correctness, completeness, documentation, and code style.&#160;</strong></em></p>
 <p><strong>Any "hard coding" in a project assignment will result in a score of zero for that assignment, and is considered a bad-faith effort.&#160;</strong>Hard coding refers to attempting to make a program appear as if it works correctly, when in fact it does not. One example of hard coding would be printing the desired output instead of computing it. If you have any questions as to what constitutes hard coding for a particular assignment, be sure to ask ahead of time.&#160;</p>
-<h2 id="academic-honesty">Academic Honesty</h2>
+<h2 id="academic-honesty">Academic Honesty<a class="headerlink" href="#academic-honesty" title="Permanent link">&para;</a></h2>
 <p>You are expected to comply with the JMU Honor Code as stated in the Student Handbook and available from the&#160;<a href="http://www.jmu.edu/honorcode" title="Honor Code ">Honor Council website</a>&#160;on all assignments, projects, and exams.&#160;</p>
-<h3 id="honor-code">Honor Code</h3>
+<h3 id="honor-code">Honor Code<a class="headerlink" href="#honor-code" title="Permanent link">&para;</a></h3>
 <p>Students who violate the Honor Code (https://www.jmu.edu/honorcode/code.shtml) will receive a reduced or failing grade in the course. Other penalties may be imposed, and all violations will be reported to the Honor Council. Representing someone else's work as your own, in any form, constitutes an honor code violation. It is also a violation of the honor code to "render unauthorized assistance to another student by knowingly permitting him or her to see or copy all or a portion of an examination or any work to be submitted for academic credit." Automated tools may be used on any assignment, at any time, to detect inappropriate collaboration and the originality of submissions.</p>
-<h3 id="generative-ai">Generative AI</h3>
+<h3 id="generative-ai">Generative AI<a class="headerlink" href="#generative-ai" title="Permanent link">&para;</a></h3>
 <p>You are permitted to use AI technology in ways that support your learning. The use of AI is strictly prohibited during quizzes and exams, so make sure you can program independently. Refer to the Generative AI in Computing Education Student Guide for examples of appropriate use.</p>
-<h3 id="attribution">Attribution</h3>
+<h3 id="attribution">Attribution<a class="headerlink" href="#attribution" title="Permanent link">&para;</a></h3>
 <p>A key component of academic integrity is giving credit where credit is due. If you receive assistance, either from another student, an online source, or an AI-enabled tool, you must provide a clear and explicit acknowledgment of that assistance in your submission. To that end, every homework assignment must include a statement describing your process for completing the work. Here is an example illustrating the format that I expect:</p>
 <p>"I was able to complete questions one and two with no assistance after reading the zyBook chapter. I got stuck on question three, but TA Jamie talked me through the solution during office hours. My solution for that question is based on her advice. I had no idea how to get started on question four, so I put the prompt into ChatGPT and asked it for an annotated solution. I didn't understand the resulting code, so I talked it over with my friend Xavier. He explained how negative string indexing works, which helped me to understand the code. My final submission for that question is copied from the ChatGPT output."</p>
 <p>Any submission without such an acknowledgment statement will receive an automatic zero.</p>
@@ -245,93 +749,78 @@ The final exam will be two hours: one for written problems, one for coding probl
 <p>You must achieve a B&#8211; or better grade to continue on to CS 159.&#160;</p>
 <p><strong>Adding and Dropping the Course</strong></p>
 <p>Students are responsible for adding and dropping courses. Please consult the appropriate&#160;<a href="http://www.jmu.edu/registrar/academiccalendars.shtml">academic calendar</a>&#160;for the exact deadlines. I will not give "WP" or "WF" grades to students requesting a drop after the deadline except in extraordinary circumstances.&#160;</p>
-<h2 id="disability-accommodations">Disability Accommodations</h2>
+<h2 id="disability-accommodations">Disability Accommodations<a class="headerlink" href="#disability-accommodations" title="Permanent link">&para;</a></h2>
 <p>If you need an accommodation based on the impact of a disability, you must contact the&#160;<a href="https://www.jmu.edu/syllabus/index.shtml#disability">Office of Disability Services</a>&#160;if you have not previously done so. Disability Services will provide you with an Access Plan letter that will verify your need for services and make recommendations for accommodations to be used in the classroom. Once you have shown me this letter, we will sit down and review the course requirements, your disability characteristics, and your requested accommodations to develop an individualized plan appropriate for this course. I will not make any accommodations without the appropriate documentation, as I am not qualified to diagnose disabilities.&#160;</p>
-<h2 id="excused-absences">Excused Absences</h2>
+<h2 id="excused-absences">Excused Absences<a class="headerlink" href="#excused-absences" title="Permanent link">&para;</a></h2>
 <p>Besides the policies in this syllabus, the University's policies apply during the semester. Various policies that may be relevant appear in the&#160;<a href="http://www.jmu.edu/catalog/10/general/policies.html">Undergraduate Catalog.</a></p>
 <p><strong><em>Excused absences will be granted at my discretion and only with appropriate documentation.</em></strong>&#160;Please contact me as soon as possible if you wish to request an excused absence.</p>
 <p>Missing an exam for reasons such as illness, religious observance, participation in required university activities, or family or personal emergency (such as a serious automobile accident or the funeral of a close relative) all are circumstances that may qualify as an excused absence. &#160;Where possible you should attempt by all means necessary to attend and take exams at their regularly scheduled class period. &#160;</p>
-<h2 id="inclement-weather">Inclement Weather</h2>
+<h2 id="inclement-weather">Inclement Weather<a class="headerlink" href="#inclement-weather" title="Permanent link">&para;</a></h2>
 <p>In case of inclement weather, we will hold class online via Zoom.&#160; A link will be available via an announcement in Canvas.&#160; Otherwise, this class will operate in accord with JMU's official&#160;<a href="http://www.jmu.edu/JMUpolicy/1309.shtml">cancellation policy</a>.</p>
-<h2 id="catalog-description">Catalog Description</h2>
+<h2 id="catalog-description">Catalog Description<a class="headerlink" href="#catalog-description" title="Permanent link">&para;</a></h2>
 <p><strong>CS 149.Introduction to Programming.</strong><span>&#160;</span><em>3 credits.</em></p>
-<p>Fundamental problem-solving techniques using a modern programming language. Topics include variables, input/output, decisions, loops, functions, arrays, and objects. Students learn about algorithm development, testing strategies, and software tools. Students may not receive credit for both <a href="http://www.jmu.edu/catalog/16/courses/CS.shtml#CS139">CS 139</a>&#160;and&#160;<a href="http://www.jmu.edu/catalog/16/courses/CS.shtml#CS149">CS 149</a>.&#160;</p></div>
-            </div>
-        </div>
+<p>Fundamental problem-solving techniques using a modern programming language. Topics include variables, input/output, decisions, loops, functions, arrays, and objects. Students learn about algorithm development, testing strategies, and software tools. Students may not receive credit for both <a href="http://www.jmu.edu/catalog/16/courses/CS.shtml#CS139">CS 139</a>&#160;and&#160;<a href="http://www.jmu.edu/catalog/16/courses/CS.shtml#CS149">CS 149</a>.&#160;</p>
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script src="../../js/jquery-3.6.0.min.js"></script>
-        <script src="../../js/bootstrap.min.js"></script>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js"></script>
-        <script src="../../search/main.js"></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
             </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Alvin Chao
+
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
 </div>
-
-    </body>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":[],"search":"../../assets/javascripts/workers/search.b6b7e04f.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7f30b55.min.js"></script>
+      
+    
+  </body>
 </html>
