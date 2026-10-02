@@ -24,6 +24,8 @@
 ## Repositories:
 
 ### Games:
+[Pile Up Poker](https://www.the-chaos.com/alvin/pileuppoker/)
+
 [Cal-Puzzle](https://chaoaj.github.io/cal-puzzle/)
 
 [Daily Calendar](https://chaoaj.github.io/daily-calendar/)
