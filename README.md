@@ -1,1 +1,1 @@
-This uses standard Github pages: https://docs.github.com/en/pages info and uses [Zensical](https://zensical.org/) to build from /docs markup into /site built pages.
+This site uses [Zensical](https://zensical.org/) to build pages from `/docs` into `/site`. The GitHub Actions workflow in `.github/workflows/pages.yml` deploys the contents of `/site` to GitHub Pages; set the repository's Pages build and deployment source to **GitHub Actions**.
